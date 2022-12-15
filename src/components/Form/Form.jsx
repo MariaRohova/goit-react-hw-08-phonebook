@@ -31,7 +31,13 @@ const Form = () => {
       name,
       number: number,
     };
-    if (contacts.find(({ number: phone }) => phone === number)) {
+    if (
+      contacts.find(
+        ({ name: nameContact, number: phone }) =>
+          phone === number ||
+          nameContact.toLowerCase() === contact.name.toLowerCase()
+      )
+    ) {
       toast(
         'This phone number is already in the contact list, please write another phone number',
         { type: 'warning', autoClose: 1000 }
@@ -51,7 +57,7 @@ const Form = () => {
 
   return (
     <Styled onSubmit={formSubmitHandle}>
-      <ToastContainer  />
+      <ToastContainer />
       <label>
         <span>Name</span>
         <input

@@ -38,8 +38,6 @@ const RegisterForm = () => {
         <div
           display="flex"
           mt="10px"
-          justifyContent="center"
-          alignItems="center"
         >
           <p>Already have an account?</p>
           <Link to="/login">Sign in</Link>

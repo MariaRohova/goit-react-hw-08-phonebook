@@ -7,6 +7,7 @@ export async function signup(credentials) {
     const response = await axios.post('/users/signup', credentials);
     return response;
   } catch (error) {
+alert('Please try again')
     return error;
   }
 }

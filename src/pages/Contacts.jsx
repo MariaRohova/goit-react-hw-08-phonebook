@@ -29,7 +29,7 @@ const Contacts = () => {
       <Form />
       <h2>Contacts</h2>
       {isLoading && <Oval wrapperClass="loader" height={20} width={20} />}
-      {contactsFromStore.length > 1 && <Filter />}
+      {contactsFromStore.length ? <Filter /> : ''}
       <ContactList
         contacts={contactsFromStore}
         filterContacts={getFilterContacts()}
