@@ -7,6 +7,7 @@ export const LoginFormStyled = styled.form`
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 20px;
   label {
     display: flex;
     flex-direction: column;
