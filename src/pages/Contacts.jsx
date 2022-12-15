@@ -1,4 +1,3 @@
-import { Box } from "components/Box";
 import ContactList from "components/ContactsList/ContactsList";
 import Filter from "components/Filter/Filter";
 import Form from "components/Form/Form";
